@@ -9,6 +9,25 @@
   --font: "Josefin Sans", sans-serif;
 }
 
+textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: var(--platinum);
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: var(--blue-ncs);
+  border-radius: 0.15rem;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: var(--star-command-blue);
+}
+
 .text-align {
   text-align: center;
 }
@@ -91,7 +110,7 @@ main {
 
 .output-area {
   border: none;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   background-color: var(--platinum);
   resize: none;
   font-size: calc(1rem + 2vw);
