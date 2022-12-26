@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="Styles/encriptador.css">
+    <script src="https://kit.fontawesome.com/c63284f5dc.js" crossorigin="anonymous"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <h1 class="title text-align">
+            Encriptador de Mensajes
+        </h1>
+    </header>
+    <main>
+        <section class="first-section text-align">
+            <div class="input-screen">
+                <textarea class="textarea" id="input" cols="25" rows="6" placeholder="Ingresa el mensaje a encriptar."></textarea>
+            </div>
+            <span class="warning">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Ingrese sólo letras minúsculas.</span>
+            <div class="button-bar">
+                <button class="btn " id="encrypt">
+                    Encriptar
+                    <i class="fa-regular fa-eye-slash"></i>
+                    </button>
+                <button class="btn" id="decrypt">
+                    Desencriptar
+                    <i class="fa-regular fa-eye"></i>
+                    </button>
+            </div>
+        </section>
+        <section class="second-section text-align">
+            <textarea class="output-area" id="output" cols="15" rows="6" readonly placeholder="Aquí se mostrará tu mensaje."></textarea>
+            <button class="btn btn-copy" id="copy">
+                Copiar
+                <i class="fa-regular fa-clipboard"></i>
+                </button>
+        </section>
+    </main>
+    <footer class="footer text-align">
+        <h2>
+            Por Guillermo Garibay
+        </h2>
+    </footer>
+    <script src="/JS/encriptador.js"></script>
+</body>
+</html>
